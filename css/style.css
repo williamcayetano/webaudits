@@ -1,0 +1,86 @@
+input[type=text], input[type=password], input[type=submit], textarea {
+  display: block;
+}
+
+input[type=text] {
+  display: block;
+  margin: 0 0 1em 0;
+  width: 350px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  padding: 1em;
+}
+
+input[type=submit] {
+  border: none;
+  margin: 0 auto;
+  padding: 8px 26px 8px 26px;
+  text-decoration: none;
+  font-size: 22px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  background: #18A2B8;
+  color: white;
+  box-shadow: 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white;
+  -webkit-box-shadow: 0 1px 0 white;
+}
+
+input[type=submit]:hover, form a:hover {
+  background: #18BBB8;
+  cursor: pointer;
+}
+
+.render-time {
+	margin-top: 60px;
+}
+
+.elapsed-time {
+	color: green;
+	font-weight: bold;
+}
+
+footer {
+	background-color: black;
+	color: white;
+}
+
+textarea {
+  resize: none;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+
+.price-crossout {
+    position: relative;
+}
+
+.price-crossout::before {
+    content: "";
+    position: absolute;
+    background: var(--primary);
+    width: 100%;
+    height: 5px;
+    top: 55%;
+    left: 0;
+    transform: skew(10deg) rotate(10deg);
+}
+
+.price-crossout::after {
+    position: absolute;
+    content: "$47";
+    font-family: "Permanent Marker", cursive;
+    bottom: 2rem;
+    left: 2rem;
+    transform: rotate(3deg);
+    font-size: 100%;
+}
+
+.errors {
+	color: red;
+	text-align: center;
+}
+
+/*---4-1-21---*/
+
+
